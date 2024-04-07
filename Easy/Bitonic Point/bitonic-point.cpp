@@ -11,37 +11,45 @@ public:
 	
 	int findMaximum(int arr[], int n)
 	{
-        if (n == 1) {
+	    // Edge Cases 
+        if (n == 1)
+        {
           return arr[0];  
         }
         if (n == 2)
         {
-            if(arr[0] > arr[1]){
+            if(arr[0] > arr[1])
+            {
                 return arr[0];
-            }else{
+            }else
+            {
                 return arr[1];
             }
         }
-    
+        
+        // Actual logic
         int low = 0, high = n - 1, mid = 0;
         
         while (low <= high) {
             mid = low + (high - low) / 2;
-    
-            if (arr[mid] > arr[mid - 1] && arr[mid] > arr[mid + 1])
+            // check if mid is more than both of its adjacent elements
+            // if mid is last element then mid + 1 element doesnt exist
+            if (mid == n - 1 || (arr[mid] > arr[mid - 1] && arr[mid] > arr[mid + 1]) )
             {
                 return arr[mid];
-            } 
-            else if (arr[mid] > arr[mid - 1])
+            }
+            // selects right side of array
+            else if (arr[mid] > arr[mid - 1]) 
             {
                 low = mid + 1;
             }
-            else
+            // selects right left side of array
+            else 
             {
                 high = mid - 1;
             }
         }
-        return arr[mid];
+        return -1; // Element doen't have Bitonic Point
     }
 };
 
