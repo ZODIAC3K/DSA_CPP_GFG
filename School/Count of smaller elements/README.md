@@ -1,4 +1,4 @@
-<h2><a href="https://www.geeksforgeeks.org/problems/count-of-smaller-elements5947/1?page=1&sortBy=difficulty">Count of smaller elements</a></h2><h3>Difficulty Level : School</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an sorted array <strong>A</strong> of size <strong>N</strong>. Find number of elements which are less than or equal to given element <strong>X</strong>.</span></p>
+<h2><a href="https://www.geeksforgeeks.org/problems/count-of-smaller-elements5947/1?page=1&difficulty=School&sortBy=submissions">Count of smaller elements</a></h2><h3>Difficulty Level : School</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an sorted array <strong>A</strong> of size <strong>N</strong>. Find number of elements which are less than or equal to given element <strong>X</strong>.</span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 18px;"><strong>Example 1:</strong></span></p>
 <pre><span style="font-size: 18px;"><strong>Input:</strong>
