@@ -9,20 +9,23 @@ public:
 	public:
 		int find_median(vector<int> v)
 		{
-		    sort(v.begin(), v.end()); 
-
-            int len = v.size();
-            int median = -1;
-        
-            if (len % 2 == 0) {
-               
-                median = (v[len / 2 - 1] + v[len / 2]) / 2;
-            } else {
+		    sort(v.begin(), v.end());
+            if(v.size() % 2 == 0)
+            {
+                if(v.size() == 2)
+                {
+                    return floor((v[0]+v[1])/2);
+                }
+                else
+                {
+                    return floor((v[(v.size())/2] + v[(v.size() - 1)/2]) / 2);
+                }
                 
-                median = v[len / 2];
             }
-        
-            return median;
+            else
+            {
+                return v[(v.size())/2];    
+            }
 		}
 };
 
