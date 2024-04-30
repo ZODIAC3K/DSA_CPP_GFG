@@ -22,7 +22,7 @@ class Solution
             for(int i = 0; i<n3; i++){
                 mc[C[i]]++;
             }
-            
+
             
             
             for(int i = 0; i<n1; i++){
@@ -34,24 +34,6 @@ class Solution
                     }
                 }
             }
-            
-            // int maxsize = INT_MIN;
-            
-            // maxsize = max(n1, n2);
-            // maxsize = max(maxsize, n3);
-            // char gratest = '';
-            
-            // if(maxsize == n1){
-            //   gratest = 'A';
-            // }else if(maxsize == n2){
-            //     gratest = 'B';
-            // }else{
-            //     gratest = 'C';
-            // }
-            
-            // for(int i = 0; i < maxsize; i++){
-            //     if(A.find(greated[i])
-            // }
             
             return result;
 
