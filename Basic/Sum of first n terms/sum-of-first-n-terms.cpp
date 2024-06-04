@@ -20,7 +20,13 @@ class Solution {
         
         // this formula works only for sum of n natural number to the power of 3
         // and formula for sum of n natural number to the power of k is differrent for every k...
-        return  (n*(n+1)/2) * (n*(n+1)/2);
+        // return  (n*(n+1)/2) * (n*(n+1)/2);
+       
+        if(n == 0){
+            return 0;
+        }
+        
+        return (n*n*n + sumOfSeries(n-1));
     }
 };
 
